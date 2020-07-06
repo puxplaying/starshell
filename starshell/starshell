@@ -1,19 +1,22 @@
 #!/bin/bash
 
 # Credits to Nicholas Farrow (https://nicholasfarrow.com/Printing-a-Star-Wars-Scene-in-Terminal-with-Bash/)
+# Credits to cscs @ forum.manjaro.org for help and ideas
 
-CFGLOC=$HOME
-SCENEDIR=$CFGLOC/starshell
+CFGLOC=https://raw.githubusercontent.com/puxplaying/starshell/master/starshell/main
+SCENEDIR=/tmp/starshell
+SCENEDIR1=$HOME/starshell
+
+if [ -e "$SCENEDIR1" ]; then
+ SCENEDATA=$(<"$SCENEDIR1/main");
+else
+ SCENEDATA=$(wget -qO- "$CFGLOC");
+fi
 
 STARTSCENE=1
 
 # Make folder if doesn't exist
 [ -d $SCENEDIR ] || mkdir $SCENEDIR
-
-# If $STARTSCENE scene file does not exist, read from main file
-if [ ! -f $SCENEDIR/s_$STARTSCENE ]; then
-
-    SCENEDATA=$(<"$SCENEDIR/main")
 
     # Load scenes
     IFS=$'Z' read -d '' -ra SCENES <<< "$SCENEDATA"
