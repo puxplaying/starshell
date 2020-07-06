@@ -1,5 +1,5 @@
 # starshell
-Bash version of the telnet Star Wars Movie.
+Bash version of the telnet Star Wars Movie. [towel.blinkenlights.nl]
 
 - To run local:
 
