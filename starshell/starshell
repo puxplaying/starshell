@@ -5,7 +5,7 @@
 
 CFGLOC=https://raw.githubusercontent.com/puxplaying/starshell/master/starshell/main
 SCENEDIR=/tmp/starshell
-SCENEDIR1=$HOME/starshell
+SCENEDIR1=$(pwd)/
 
 if [ -e "$SCENEDIR1" ]; then
  SCENEDATA=$(<"$SCENEDIR1/main");
