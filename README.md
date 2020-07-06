@@ -1,5 +1,5 @@
 # starshell
-Star Wars Movie in Terminal with Bash without having to use telnet.
+Bash version of the telnet Star Wars Movie.
 
 Copy the starshell folder to your ```$HOME``` directory and run the starshell script.
 
