@@ -5,9 +5,7 @@ Bash version of the telnet Star Wars Movie. [towel.blinkenlights.nl]
 
 ```git clone https://github.com/puxplaying/starshell.git```
 
-```cd starshell && cd starshell```
-
-```./starshell```
+```cd starshell && cd starshell && ./starshell```
 
 ---
 
