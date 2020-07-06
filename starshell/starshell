@@ -1,0 +1,547 @@
+#!/bin/bash
+
+# Credits to Nicholas Farrow (https://nicholasfarrow.com/Printing-a-Star-Wars-Scene-in-Terminal-with-Bash/)
+
+CFGLOC=$HOME
+SCENEDIR=$CFGLOC/starshell
+
+STARTSCENE=1
+
+# Make folder if doesn't exist
+[ -d $SCENEDIR ] || mkdir $SCENEDIR
+
+# If $STARTSCENE scene file does not exist, read from main file
+if [ ! -f $SCENEDIR/s_$STARTSCENE ]; then
+
+    SCENEDATA=$(<"$SCENEDIR/main")
+
+    # Load scenes
+    IFS=$'Z' read -d '' -ra SCENES <<< "$SCENEDATA"
+
+    #echo ${#SCENES[@]}
+
+    # Intro
+    for SCENENUM in $(seq 0 1 3); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2 && clear
+    done
+
+    ## Intro 2
+    for SCENENUM in $(seq 4 1 48); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.1 && clear
+    done
+
+    ## Intro 3
+    for SCENENUM in $(seq 49 1 52); do
+         printf "${SCENES[$SCENENUM]}" && sleep 3 && clear
+    done
+
+    # Intro 4
+    for SCENENUM in $(seq 53 1 111); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.7 && clear
+    done
+
+    # Scene 1
+    for SCENENUM in $(seq 112 1 129); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.2 && clear
+    done
+
+    # Scene 2
+    for SCENENUM in $(seq 130 1 232); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.1 && clear
+    done
+
+    # Scene 3
+    for SCENENUM in $(seq 233 1 252); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.8 && clear
+    done
+
+    # Scene 4
+    for SCENENUM in $(seq 252 1 350); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.2 && clear
+    done
+
+    # Scene 5
+    for SCENENUM in $(seq 350 1 355); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2.5 && clear
+    done
+
+    # Scene 6
+    for SCENENUM in $(seq 356 1 401); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.7 && clear
+    done
+
+    # Scene 7
+    for SCENENUM in $(seq 402 1 419); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.1 && clear
+    done
+
+    # Scene 8
+    for SCENENUM in $(seq 420 1 423); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1.5 && clear
+    done
+
+    # Scene 9
+    for SCENENUM in $(seq 424 1 437); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 10
+    for SCENENUM in $(seq 438 1 446); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1 && clear
+    done
+
+    # Scene 11
+    for SCENENUM in $(seq 447 1 478); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 12
+    for SCENENUM in $(seq 479 1 484); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1.5 && clear
+    done
+
+    # Scene 12
+    for SCENENUM in $(seq 485 1 605); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.1 && clear
+    done
+
+    # Scene 13
+    for SCENENUM in $(seq 606 1 654); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1 && clear
+    done
+
+    # Scene 14
+    for SCENENUM in $(seq 655 1 672); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.2 && clear
+    done
+
+    # Scene 15
+    for SCENENUM in $(seq 672 1 684); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1 && clear
+    done
+
+    # Scene 16
+    for SCENENUM in $(seq 685 1 741); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.2 && clear
+    done
+
+    # Scene 17
+    for SCENENUM in $(seq 742 1 746); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1.5 && clear
+    done
+
+    # Scene 18
+    for SCENENUM in $(seq 747 1 800); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.1 && clear
+    done
+
+    # Scene 19
+    for SCENENUM in $(seq 801 1 827); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 20
+    for SCENENUM in $(seq 828 1 850); do
+         printf "${SCENES[$SCENENUM]}" && sleep 3 && clear
+    done
+
+    # Scene 21
+    for SCENENUM in $(seq 851 1 869); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 22
+    for SCENENUM in $(seq 870 1 897); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1 && clear
+    done
+
+    # Scene 23
+    for SCENENUM in $(seq 898 1 913); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 24
+    for SCENENUM in $(seq 914 1 982); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2 && clear
+    done
+
+    # Scene 25
+    for SCENENUM in $(seq 983 1 995); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 26
+    for SCENENUM in $(seq 996 1 1008); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2 && clear
+    done
+
+    # Scene 27
+    for SCENENUM in $(seq 1009 1 1045); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 28
+    for SCENENUM in $(seq 1046 1 1062); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1 && clear
+    done
+
+    # Scene 29
+    for SCENENUM in $(seq 1063 1 1111); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.1 && clear
+    done
+
+    # Scene 30
+    for SCENENUM in $(seq 1112 1 1139); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1.5 && clear
+    done
+
+    # Scene 31
+    for SCENENUM in $(seq 1140 1 1152); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2 && clear
+    done
+
+    # Scene 32
+    for SCENENUM in $(seq 1153 1 1202); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.5 && clear
+    done
+
+    # Scene 33
+    for SCENENUM in $(seq 1203 1 1293); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2 && clear
+    done
+
+    # Scene 34
+    for SCENENUM in $(seq 1294 1 1331); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.7 && clear
+    done
+
+    # Scene 35
+    for SCENENUM in $(seq 1332 1 1352); do
+         printf "${SCENES[$SCENENUM]}" && sleep 3 && clear
+    done
+
+    # Scene 36
+    for SCENENUM in $(seq 1353 1 1362); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2 && clear
+    done
+
+    # Scene 37
+    for SCENENUM in $(seq 1363 1 1369); do
+         printf "${SCENES[$SCENENUM]}" && sleep 5 && clear
+    done
+
+    # Scene 38
+    for SCENENUM in $(seq 1370 1 1383); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 39
+    for SCENENUM in $(seq 1384 1 1389); do
+         printf "${SCENES[$SCENENUM]}" && sleep 3 && clear
+    done
+
+    # Scene 40
+    for SCENENUM in $(seq 1390 1 1425); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.1 && clear
+    done
+
+    # Scene 41
+    for SCENENUM in $(seq 1426 1 1464); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2 && clear
+    done
+
+    # Scene 42
+    for SCENENUM in $(seq 1465 1 1498); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.2 && clear
+    done
+
+    # Scene 43
+    for SCENENUM in $(seq 1499 1 1510); do
+         printf "${SCENES[$SCENENUM]}" && sleep 3 && clear
+    done
+
+    # Scene 44
+    for SCENENUM in $(seq 1511 1 1619); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.1 && clear
+    done
+
+    # Scene 45
+    for SCENENUM in $(seq 1620 1 1640); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.5 && clear
+    done
+
+    # Scene 46
+    for SCENENUM in $(seq 1641 1 1715); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.2 && clear
+    done
+
+    # Scene 47
+    for SCENENUM in $(seq 1716 1 1723); do
+         printf "${SCENES[$SCENENUM]}" && sleep 3 && clear
+    done
+
+    # Scene 48
+    for SCENENUM in $(seq 1723 1 1762); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.1 && clear
+    done
+
+    # Scene 49
+    for SCENENUM in $(seq 1763 1 1775); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2.5 && clear
+    done
+
+    # Scene 50
+    for SCENENUM in $(seq 1776 1 1791); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.1 && clear
+    done
+
+    # Scene 51
+    for SCENENUM in $(seq 1792 1 1813); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2 && clear
+    done
+
+    # Scene 52
+    for SCENENUM in $(seq 1814 1 1885); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.2 && clear
+    done
+
+    # Scene 53
+    for SCENENUM in $(seq 1886 1 1904); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1 && clear
+    done
+
+    # Scene 54
+    for SCENENUM in $(seq 1905 1 1911); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.5 && clear
+    done
+
+    # Scene 55
+    for SCENENUM in $(seq 1912 1 1921); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2 && clear
+    done
+
+    # Scene 56
+    for SCENENUM in $(seq 1922 1 1940); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 57
+    for SCENENUM in $(seq 1941 1 1970); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2.5 && clear
+    done
+
+    # Scene 58
+    for SCENENUM in $(seq 1971 1 1976); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.5 && clear
+    done
+
+    # Scene 59
+    for SCENENUM in $(seq 1977 1 1990); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2.5 && clear
+    done
+
+    # Scene 60
+    for SCENENUM in $(seq 1991 1 2003); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.5 && clear
+    done
+
+    # Scene 61
+    for SCENENUM in $(seq 2004 1 2073); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 62
+    for SCENENUM in $(seq 2074 1 2078); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1 && clear
+    done
+
+    # Scene 63
+    for SCENENUM in $(seq 2079 1 2170); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.1 && clear
+    done
+
+    # Scene 64
+    for SCENENUM in $(seq 2171 1 2199); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1.5 && clear
+    done
+
+    # Scene 65
+    for SCENENUM in $(seq 2200 1 2316); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 66
+    for SCENENUM in $(seq 2317 1 2330); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1.5 && clear
+    done
+
+    # Scene 67
+    for SCENENUM in $(seq 2331 1 2355); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 68
+    for SCENENUM in $(seq 2356 1 2428); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.5 && clear
+    done
+
+    # Scene 69
+    for SCENENUM in $(seq 2429 1 2435); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 70
+    for SCENENUM in $(seq 2436 1 2446); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2 && clear
+    done
+
+    # Scene 71
+    for SCENENUM in $(seq 2447 1 2488); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.1 && clear
+    done
+
+    # Scene 72
+    for SCENENUM in $(seq 2489 1 2507); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1 && clear
+    done
+
+    # Scene 73
+    for SCENENUM in $(seq 2508 1 2528); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1.5 && clear
+    done
+
+    # Scene 74
+    for SCENENUM in $(seq 2529 1 2559); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.1 && clear
+    done
+
+    # Scene 75
+    for SCENENUM in $(seq 2560 1 2575); do
+         printf "${SCENES[$SCENENUM]}" && sleep 3 && clear
+    done
+
+    # Scene 76
+    for SCENENUM in $(seq 2576 1 2590); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 77
+    for SCENENUM in $(seq 2591 1 2601); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1.5 && clear
+    done
+
+    # Scene 78
+    for SCENENUM in $(seq 2602 1 2603); do
+         printf "${SCENES[$SCENENUM]}" && sleep 3 && clear
+    done
+
+    # Scene 79
+    for SCENENUM in $(seq 2604 1 2608); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2 && clear
+    done
+
+    # Scene 80
+    for SCENENUM in $(seq 2609 1 2622); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1 && clear
+    done
+
+    # Scene 81
+    for SCENENUM in $(seq 2623 1 2646); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2 && clear
+    done
+
+    # Scene 82
+    for SCENENUM in $(seq 2646 1 2674); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.5 && clear
+    done
+
+    # Scene 83
+    for SCENENUM in $(seq 2675 1 2691); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2 && clear
+    done
+
+    # Scene 84
+    for SCENENUM in $(seq 2692 1 2741); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 85
+    for SCENENUM in $(seq 2742 1 2753); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1 && clear
+    done
+
+    # Scene 86
+    for SCENENUM in $(seq 2754 1 2826); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 87
+    for SCENENUM in $(seq 2827 1 2859); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2 && clear
+    done
+
+    # Scene 88
+    for SCENENUM in $(seq 2860 1 2884); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 89
+    for SCENENUM in $(seq 2885 1 3015); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1 && clear
+    done
+
+    # Scene 90
+    for SCENENUM in $(seq 3016 1 3062); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 91
+    for SCENENUM in $(seq 3063 1 3070); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.5 && clear
+    done
+
+    # Scene 92
+    for SCENENUM in $(seq 3071 1 3150); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.1 && clear
+    done
+
+    # Scene 93
+    for SCENENUM in $(seq 3151 1 3158); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1 && clear
+    done
+
+    # Scene 94
+    for SCENENUM in $(seq 3159 1 3167); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.3 && clear
+    done
+
+    # Scene 95
+    for SCENENUM in $(seq 3168 1 3171); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2 && clear
+    done
+
+    # Scene 96
+    for SCENENUM in $(seq 3172 1 3365); do
+         echo "${SCENES[$SCENENUM]}" && sleep 0.2 && clear
+    done
+
+    # Scene 97
+    for SCENENUM in $(seq 3366 1 3370); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1.5 && clear
+    done
+
+    # Scene 98
+    for SCENENUM in $(seq 3371 1 3385); do
+         printf "${SCENES[$SCENENUM]}" && sleep 0.2 && clear
+    done
+
+    # Scene 99
+    for SCENENUM in $(seq 3386 1 3409); do
+         printf "${SCENES[$SCENENUM]}" && sleep 1.5 && clear
+    done
+
+    # Scene 100
+    for SCENENUM in $(seq 3410 1 3411); do
+         printf "${SCENES[$SCENENUM]}" && sleep 2 && clear
+    done
+fi
