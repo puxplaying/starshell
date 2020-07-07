@@ -1,5 +1,5 @@
 # starshell
-Bash version of the telnet Star Wars Movie. [towel.blinkenlights.nl]
+Bash version of the ASCII telnet Star Wars Movie. [towel.blinkenlights.nl]
 
  ```                                                                        
                           8888888888  888    88888                       
