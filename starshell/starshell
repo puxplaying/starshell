@@ -7,7 +7,7 @@ CFGLOC=https://raw.githubusercontent.com/puxplaying/starshell/master/starshell/m
 SCENEDIR=/tmp/starshell
 SCENEDIR1=$(pwd)/
 
-if [ -e "$SCENEDIR1" ]; then
+if [ -z "$STARWARS" ]; then
  SCENEDATA=$(<"$SCENEDIR1/main");
 else
  SCENEDATA=$(wget -qO- "$CFGLOC");
