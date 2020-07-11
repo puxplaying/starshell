@@ -15,7 +15,7 @@ Bash version of the ASCII telnet Star Wars Movie. [towel.blinkenlights.nl]
                         88  88  88     88 88    8888888                  
 ```                                                                         
 
-- To run local:
+- To watch the movie local:
 
 ```git clone https://github.com/puxplaying/starshell.git```
 
@@ -23,7 +23,7 @@ Bash version of the ASCII telnet Star Wars Movie. [towel.blinkenlights.nl]
 
 ---
 
-- To run remotely:
+- To watch the movie remotely:
 
 ```wget -qO- https://raw.githubusercontent.com/puxplaying/starshell/master/starshell/starshell | bash -s```
 
