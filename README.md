@@ -17,11 +17,10 @@ Bash version of the ASCII telnet Star Wars Movie. [towel.blinkenlights.nl]
 
 - To watch the movie local:
 
-```git clone https://github.com/puxplaying/starshell.git```
-
-```cd starshell && cd starshell && ./starshell```
-
----
+```
+git clone https://github.com/puxplaying/starshell.git
+cd starshell && cd starshell && ./starshell
+```
 
 - To watch the movie remotely:
 
