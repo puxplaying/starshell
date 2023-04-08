@@ -15,15 +15,14 @@ Bash version of the ASCII telnet Star Wars Movie. [towel.blinkenlights.nl]
                         88  88  88     88 88    8888888                  
 ```                                                                         
 
-- To watch the movie local:
+To watch the movie local:
 
-```
-git clone https://github.com/puxplaying/starshell.git
-cd starshell && cd starshell && ./starshell
-```
+- ```git clone https://github.com/puxplaying/starshell.git```
 
-- To watch the movie remotely:
+- ```cd starshell && cd starshell && ./starshell```
 
-```wget -qO- https://raw.githubusercontent.com/puxplaying/starshell/master/starshell/starshell | bash -s```
+To watch the movie remotely:
+
+- ```wget -qO- https://raw.githubusercontent.com/puxplaying/starshell/master/starshell/starshell | bash -s```
 
 Have Fun!
