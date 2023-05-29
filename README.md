@@ -1,4 +1,4 @@
-# starshell
+# StarShell
 Bash version of the ASCII telnet Star Wars Movie. [towel.blinkenlights.nl]
 
  ```                                                                        
